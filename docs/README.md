@@ -1,4 +1,4 @@
-<img src="Profile Pic.jfif" alt="Profile Image" width="200" height="200" style="float: left; margin-right: 5px; border-radius: 80px; padding: 6px;">
+<img src="Profile_Pic.jfif" alt="Profile Image" width="200" height="200" style="float: left; margin-right: 5px; border-radius: 80px; padding: 6px;">
 
 # Manimadhuri Edara
 📞 443-527-0420 | ✉ Medara1@umbc.edu | [LinkedIn](linkedin.com/in/manimadhuriedara) | [GitHub](github.com/MANIMADHURIE)
