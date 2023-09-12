@@ -20,14 +20,14 @@ The dataset contains the following columns:
             1) reviewerID - ID of the reviewer, e.g. A2SUAM1J3GNN3B
             2) asin - ID of the product, e.g. 0000013714
             3) reviewerName - name of the reviewer
-            4) vote - helpful votes of the review
+            4) helpful - helpful votes of the review
             5) style - a disctionary of the product metadata, e.g., "Format" is "Hardcover"
             6) reviewText - text of the review
             7) overall - rating of the product
             8) summary - summary of the review
             9) unixReviewTime - time of the review (unix time)
             10) reviewTime - time of the review (raw)
-            11) image - images that users post after they have received the product
+            
 
 ### Research questions:
 
