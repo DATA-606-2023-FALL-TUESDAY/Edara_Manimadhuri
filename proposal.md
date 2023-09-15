@@ -53,8 +53,8 @@ The Amazon Grocery_and_Gourmet_Food Reviews dataset is a valuable resource to un
 - Time period : 2000 - 2014
 - Data dictionary:
 
+![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/assets/37103568/0589efb4-8995-4ecd-8955-394a5904c1ea)
 
-![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/assets/37103568/a1933804-35be-42e2-93b7-e06df728a0d8)
           
 - Target/label in your ML model : overall
   
