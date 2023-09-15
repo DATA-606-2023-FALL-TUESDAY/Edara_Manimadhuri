@@ -1,11 +1,16 @@
 # Text Analysis of Amazon Grocery_and_Gourmet_Food Product Reviews.
-### Name : Manimadhuri Edara
-### GitHub profile: https://github.com/MANIMADHURIE
-### LinkedIn progile: https://www.linkedin.com/in/manimadhuriedara/
-### Introduction
+
+-  Author : Manimadhuri Edara
+-  Prepared for UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
+-  GitHub profile: <a href="https://github.com/MANIMADHURIE"> MANIMADHURIE </a>
+-  LinkedIn progile: <a href="https://www.linkedin.com/in/manimadhuriedara/"> manimadhuriedara </a>
+-  PowerPoint Presentation - TBA
+-  YouTube Video - TBA
+
+## Background
 The "Amazon Grocery and Gourmet Food Reviews" project is a comprehensive analysis of customer reviews and ratings for food products on the Amazon Fresh platform. By delving into this dataset, I aim to extract valuable insights into consumer preferences, product quality, and reviewer behavior. Through natural language processing and machine learning techniques, seek to uncover trends and patterns that can inform businesses, consumers, and the broader food industry.
 
-<img src="https://assets.aboutamazon.com/dims4/default/e1f08b0/2147483647/strip/true/crop/1279x720+0+0/resize/1320x743!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2Ff5%2F9f%2F43fe106c4a5081e7a696ef0a8fa8%2Ffresh-1280x7201.jpg" width="600">
+<img src="https://assets.aboutamazon.com/dims4/default/e1f08b0/2147483647/strip/true/crop/1279x720+0+0/resize/1320x743!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2Ff5%2F9f%2F43fe106c4a5081e7a696ef0a8fa8%2Ffresh-1280x7201.jpg" width="400">
 
 ### Dataset Background
 The Amazon Grocery_and_Gourmet_Food Reviews dataset consists of reviews of Grocery_and_Gourmet foods from Amazon. The data span a period of more than 10 years, including all ~500,000 reviews. Reviews include product and user information, ratings, and a plaintext review.
