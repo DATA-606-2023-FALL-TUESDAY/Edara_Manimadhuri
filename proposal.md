@@ -7,7 +7,7 @@
 -  PowerPoint Presentation - TBA
 -  YouTube Video - TBA
   
-## Project Goal : 
+## Objective
 
 In this project I aim to employ natural language processing (NLP) techniques and sentiment analysis in conjunction with a machine learning model, utilizing both the textual content of the 'review text' and the numerical 'overall' rating columns, to classify reviews into distinct sentiment categories, namely positive, negative, or neutral. Also develop a collaborative filtering recommendation system using user-item interactions and latent factor modeling to generate personalized product ('asin') recommendations, leveraging historical review data and user preferences.
 
@@ -44,7 +44,7 @@ The Text Analysis of Amazon Grocery_and_Gourmet_Food Product Reviews will provid
 The Amazon Grocery_and_Gourmet_Food Reviews dataset consists of reviews of Grocery_and_Gourmet foods from Amazon. The data span a period of more than 10 years, including all ~500,000 reviews. Reviews include product and user information, ratings, and a plaintext review.
 The Amazon Grocery_and_Gourmet_Food Reviews dataset is a valuable resource to understand consumer behavior and the online review process. It is a large and comprehensive dataset that can be used to answer a variety of research questions.
 
-##### Description: 
+##### Description
 - Data sources : https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/
 - Data size (MB, GB, etc.) : 91.716MB
 - Data shape (# of rows and # columns):
