@@ -81,8 +81,7 @@ TBA
  [1] Sentiment Analysis on Amazon Product Reviews using Text Analysis and Natural Language Processing Methods, April 2023, 
  https://www.researchgate.net/publication/369997867_Sentiment_Analysis_on_Amazon_Product_Reviews_using_Text_Analysis_and_Natural_Language_Processing_Methods
 
- [2] Bi-RNN and Bi-LSTM Based Text Classification for Amazon Reviews, April 2023, https://www.researchgate.net/publication/370062640_Bi-RNN_and_Bi- 
- LSTM_Based_Text_Classification_for_Amazon_Reviews
+ [2] Bi-RNN and Bi-LSTM Based Text Classification for Amazon Reviews, April 2023, https://www.researchgate.net/publication/370062640_Bi-RNN_and_Bi-LSTM_Based_Text_Classification_for_Amazon_Reviews
 
  [3] Performance Evaluation of Feature Selection Methods for Sentiment Classification in Amazon Product Reviews, July 2023, 
  https://www.researchgate.net/publication/373266249_Performance_Evaluation_of_Feature_Selection_Methods_for_Sentiment_Classification_in_Amazon_Product_Reviews
