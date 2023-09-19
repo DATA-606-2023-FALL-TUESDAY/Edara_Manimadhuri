@@ -1,4 +1,4 @@
-# Text Analysis of Amazon Grocery_and_Gourmet_Food Product Reviews.
+# Textual Analysis of Amazon Grocery and Gourmet Food Product Reviews.
 
 -  Author : Manimadhuri Edara
 -  Prepared for UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
@@ -18,13 +18,13 @@ The Text Analysis of Amazon Grocery_and_Gourmet_Food Product Reviews will provid
 
 - What is it about?
   
-  To analyze the content of the reviews and perform tasks like text classification, topic modeling, or sentiment analysis and extract valuable insights into 
+  To analyze the content of the reviews and perform tasks like text classification, topic modeling, sentiment analysis and extract valuable insights into 
   consumer preferences, product quality, and reviewer behavior
   
 - Why does it matter?
 
   Text analysis of Amazon grocery product reviews has significance since it can provide businesses, consumers, and the food industry with valuable insights by 
-  identifying trends and patterns in Amazon Fresh food product reviews.
+  identifying trends and patterns in Amazon food product reviews.
   
 - What are your research questions?
  
@@ -51,13 +51,13 @@ The Amazon Grocery_and_Gourmet_Food Reviews dataset is a valuable resource to un
 - Time period : 2000 - 2014
 - Data dictionary:
 
-![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/assets/37103568/0589efb4-8995-4ecd-8955-394a5904c1ea)
+  ![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/assets/37103568/876ff8d2-907e-491f-ada5-18e7359b910d)
+
 
           
 - Target/label in your ML model : overall
   
-- Which variables/columns may be selected as features/predictors for your ML models?
-   selected_features of the model = ['reviewText', 'reviewerID', 'asin', 'overall', 'summary', 'unixReviewTime', 'reviewTime']
+- Features of the model = ['reviewText', 'overall', 'summary', 'unixReviewTime', 'reviewTime']
 
 ## Exploratory Data Analysis (EDA)
 
