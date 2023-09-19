@@ -34,8 +34,6 @@ The Text Analysis of Amazon Grocery_and_Gourmet_Food Product Reviews will provid
      - Categorize reviews into specific topics or categories based on the content of the review text.
   3. **Spam Detection:**
      - Develop a method to detect duplicate reviews or spam reviews that may artificially inflate or deflate product ratings.
-  4. **Comparative Analysis:**
-     - Compare the sentiment and content of reviews for different products or brands within the dataset.
 
 ## Data
 
