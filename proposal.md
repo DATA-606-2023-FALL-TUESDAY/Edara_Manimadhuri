@@ -28,15 +28,13 @@ The Text Analysis of Amazon Grocery_and_Gourmet_Food Product Reviews will provid
   
 - What are your research questions?
  
-  1. **Helpfulness Prediction:**
-     - Predict how helpful a review will be based on the content of the review text and the overall rating.
-  2. **Reviewer Behavior:**
+  1. **Reviewer Behavior:**
      - Identify patterns in reviewer behavior, such as frequent reviewers or those who tend to leave extreme ratings.
-  3. **Review Text Classification:**
+  2. **Review Text Classification:**
      - Categorize reviews into specific topics or categories based on the content of the review text.
-  4. **Spam Detection:**
+  3. **Spam Detection:**
      - Develop a method to detect duplicate reviews or spam reviews that may artificially inflate or deflate product ratings.
-  5. **Comparative Analysis:**
+  4. **Comparative Analysis:**
      - Compare the sentiment and content of reviews for different products or brands within the dataset.
 
 ## Data
