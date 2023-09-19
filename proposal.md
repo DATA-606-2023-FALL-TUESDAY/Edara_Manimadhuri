@@ -37,7 +37,7 @@ The Text Analysis of Amazon Grocery_and_Gourmet_Food Product Reviews will provid
 
 ## Data
 
-The Amazon Grocery_and_Gourmet_Food Reviews dataset consists of reviews of Grocery_and_Gourmet foods from Amazon. The data span a period of more than 10 years, including all ~500,000 reviews. Reviews include product and user information, ratings, and a plaintext review.
+The Amazon Grocery_and_Gourmet_Food Reviews dataset consists of reviews of Grocery_and_Gourmet foods from Amazon. The data span a period of more than 10 years, including all ~151,254 reviews. Reviews include product and user information, ratings, and a plaintext review.
 The Amazon Grocery_and_Gourmet_Food Reviews dataset is a valuable resource to understand consumer behavior and the online review process. It is a large and comprehensive dataset that can be used to answer a variety of research questions.
 
 ##### Description
