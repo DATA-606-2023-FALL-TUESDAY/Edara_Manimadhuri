@@ -26,7 +26,7 @@ The Text Analysis of Amazon Grocery_and_Gourmet_Food Product Reviews will provid
   Text analysis of Amazon grocery product reviews has significance since it can provide businesses, consumers, and the food industry with valuable insights by 
   identifying trends and patterns in Amazon food product reviews.
   
-- What are your research questions?
+- Research Questions:
  
   1. **Reviewer Behavior:**
      - Identify patterns in reviewer behavior, such as frequent reviewers or those who tend to leave extreme ratings.
@@ -59,7 +59,27 @@ The Amazon Grocery_and_Gourmet_Food Reviews dataset is a valuable resource to un
 
 ## Exploratory Data Analysis (EDA)
 
-TBA
+The EDA report offers a comprehensive understanding of the dataset, addressing missing values and duplicate rows while presenting vital statistics. EDA serves as the cornerstone for subsequent analysis, data cleansing, and modeling. Within the context of preparing the dataset for deeper analysis, I have conducted essential exploratory data analysis (EDA). This process sheds light on the data types within the dataset, which are fundamental for data manipulation and analysis. 
+
+During this analysis, I have identified missing values in the dataset, with 'reviewerName' having 1,493 missing entries and 'reviewText' having 22. To rectify this, we imputed these gaps with appropriate placeholders: 'Unknown' for 'reviewerName' and 'No review available' for 'reviewText.' This adjustment ensures the dataset is more comprehensive and suitable for analysis without sacrificing valuable data. Furthermore, we verified the dataset for duplicate rows. The absence of duplicate rows is a positive discovery as they can skew the analysis and lead to inaccurate results.
+
+##### Key Findings from the EDA report:
+
+- The overall rating of the products in the dataset is high, with an average rating of 4.24 out of 5.
+- The most recent review was posted in July 2014.
+- The median review was posted in February 2013.
+- The distribution of the overall ratings is skewed to the right, with more products having higher ratings.
+
+##### Overall Distribution
+
+| overall | overallPercentage | proportion |
+|---|---|---|
+| 0 | 5 | 57.81 |
+| 1 | 4 | 21.55 |
+| 2 | 3 | 11.58 |
+| 3 | 2 | 5.23 |
+| 4 | 1 | 3.82 |
+
 
 ## Model Training
 
