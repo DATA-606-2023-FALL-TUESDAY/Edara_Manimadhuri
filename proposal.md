@@ -50,9 +50,7 @@ The Amazon Grocery_and_Gourmet_Food Reviews dataset is a valuable resource to un
 - Data dictionary:
 
   ![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/assets/37103568/876ff8d2-907e-491f-ada5-18e7359b910d)
-
-
-          
+         
 - Target/label in your ML model : overall
   
 - Features of the model = ['reviewText', 'overall', 'summary', 'unixReviewTime', 'reviewTime']
@@ -62,13 +60,6 @@ The Amazon Grocery_and_Gourmet_Food Reviews dataset is a valuable resource to un
 The EDA report offers a comprehensive understanding of the dataset, addressing missing values and duplicate rows while presenting vital statistics. EDA serves as the cornerstone for subsequent analysis, data cleansing, and modeling. Within the context of preparing the dataset for deeper analysis, I have conducted essential exploratory data analysis (EDA). This process sheds light on the data types within the dataset, which are fundamental for data manipulation and analysis. 
 
 During this analysis, I have identified missing values in the dataset, with 'reviewerName' having 1,493 missing entries and 'reviewText' having 22. To rectify this, we imputed these gaps with appropriate placeholders: 'Unknown' for 'reviewerName' and 'No review available' for 'reviewText.' This adjustment ensures the dataset is more comprehensive and suitable for analysis without sacrificing valuable data. Furthermore, we verified the dataset for duplicate rows. The absence of duplicate rows is a positive discovery as they can skew the analysis and lead to inaccurate results.
-
-##### Key Findings from the EDA report:
-
-- The overall rating of the products in the dataset is high, with an average rating of 4.24 out of 5.
-- The most recent review was posted in July 2014.
-- The median review was posted in February 2013.
-- The distribution of the overall ratings is skewed to the right, with more products having higher ratings.
 
 ##### Overall Distribution
 
@@ -80,7 +71,57 @@ During this analysis, I have identified missing values in the dataset, with 'rev
 | 3 | 2 | 5.23 |
 | 4 | 1 | 3.82 |
 
+![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/blob/main/src/Perc_Dist_Overall_rating.png)
 
+##### A Scatterplot showing the relationship between overall rating and helpful votes: 
+The graph indicates a right-skewed distribution of ratings, suggesting a greater number of products with higher ratings compared to those with lower ratings.   This is a positive sign since it indicates that consumers are delighted with the products they have purchased.
+![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/blob/main/src/newplot.png)
+
+#### Key findings from the EDA report:
+
+- The overall rating of the products in the dataset is high, with an average rating of 4.24 out of 5.
+- The most recent review was posted in July 2014.
+- The median review was posted in February 2013.
+- The distribution of the overall ratings is skewed to the right, with more products having higher ratings.
+  
+#### Text Preprocessing:
+
+- Imported the necessary standard libraries, including Gensim for topic modeling, NLTK for text processing, and Matplotlib for visualization.
+- Normalized the text by converting the 'reviewText' column to lowercase, to ensure that the text is consistent and not case-sensitive.
+- Initialized a set of English stopwords using NLTK. These stopwords are common words like 'the,' 'and,' 'is,' etc., which are often removed from text data as they do not carry significant meaning.
+- Defined a function preprocess_text to tokenize the text and remove stopwords. Which tokenizes the text, converts it to lowercase, and filters out non-alphabetic words and stopwords. The processed_documents list is created by applying the preprocess_text function to each document in the 'reviewText' column of the DataFrame.
+- Defined another function, returning_tokinize_list, to tokenize all the words in the 'reviewText' column and combine them into a single list named tokenize_list_words for further analysis.
+
+#### Topic modeling using Latent Dirichlet Allocation (LDA):
+- Created a dictionary using the Gensim library. It associates words with unique integer IDs.
+- Generated a corpus by converting each document into a bag of words. Each document is represented as a list of (word ID, word frequency) pairs based on the dictionary created earlier. This prepares the data for the LDA model.
+- Performed LDA topic modeling using Gensim's LdaModel. It specifies the number of topics (in this case, 5) and uses the corpus and dictionary created earlier as input data. 
+- We were further able to print the top words associated with each topic. For example, topic 0 is associated with words like 'coffee,' 'flavor,' 'cup,' and 'taste.'
+  ![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/blob/main/src/wc1.png)
+
+To assess the quality of the topics produced by the LDA model, a coherence score is calculated using the 'CoherenceModel'.   The coherence score quantifies the level of clarity and interpretability of the issues. Analyzing the recognized topics and their top words can offer significant insights into the content of the dataset, making it a useful technique for organizing and understanding text data.
+
+#### Sentiment analysis using VADER(Valence Aware Dictionary and sEntiment Reasoner):
+
+Conducting sentiment analysis on Amazon review data, explored the temporal evolution of sentiments in reviews. To achieve this, initiated the VADER sentiment analyzer and applied it to the 'reviewText' column in the DataFrame, assigning a sentiment score to each review. Subsequently, visualized the sentiment score distribution using a histogram. Later, converted the 'unixReviewTime' column to a datetime format and organized the data into time periods, in this case, monthly intervals. Calculating the mean sentiment for each period, generated a time series plot to visualize sentiment changes over time. This insightful analysis offers a deeper understanding of how sentiments evolve in Amazon grocery reviews, facilitating data-driven decisions and valuable insights.
+
+![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/blob/main/src/senti_distribution.png)
+
+Below graph shows that the average rating of the grocery store has declined over time. In 2001, the average rating was 0.9. In 2013, the average rating was 0.7.
+This decline in average rating could be due to a number of factors, such as a decrease in the quality of the products or services, a spike in the number of negative customer reviews or a change in the demographics of the customers. 
+
+Key insights from the graph:
+
+- The decline in average rating is gradual, suggesting that it is not due to a single event or change.
+- The decline in average rating is consistent across all years shown in the graph.
+- The decline in the average rating is not uniform. The average rating declined more sharply between 2001 and 2003 than it did in subsequent years.
+
+Overall, the image suggests that the grocery store has experienced a decline in customer satisfaction over time. These insights could be used to identify the root cause of the decline in customer satisfaction and develop strategies to address it.
+
+
+![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/blob/main/src/senti_time.png)
+
+ 
 ## Model Training
 
 TBA
