@@ -30,10 +30,11 @@ The Text Analysis of Amazon Grocery_and_Gourmet_Food Product Reviews will provid
  
   1. **Reviewer Behavior:**
      - Identify patterns in reviewer behavior, such as frequent reviewers or those who tend to leave extreme ratings.
+     - What are the key factors that influence customer satisfaction with Amazon Grocery products?
   2. **Review Text Classification:**
      - Categorize reviews into specific topics or categories based on the content of the review text.
-  3. **Spam Detection:**
-     - Develop a method to detect duplicate reviews or spam reviews that may artificially inflate or deflate product ratings.
+  3. **Sentiment Analysis:**
+     - How does the sentiment of Amazon Grocery reviews vary over time?
 
 ## Data
 
