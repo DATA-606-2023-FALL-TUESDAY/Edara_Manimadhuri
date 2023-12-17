@@ -1,11 +1,13 @@
-# Textual Analysis of Amazon Grocery and Gourmet Food Product Reviews.
+# Capstone Report
+## Textual Analysis of Amazon Grocery and Gourmet Food Product Reviews.
 
--  Author : Manimadhuri Edara
--  Prepared for UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
--  GitHub profile: <a href="https://github.com/MANIMADHURIE"> MANIMADHURIE </a>
--  LinkedIn progile: <a href="https://www.linkedin.com/in/manimadhuriedara/"> manimadhuriedara </a>
--  PowerPoint Presentation - TBA
--  YouTube Video - TBA
+-  **Author Name** : Manimadhuri Edara
+- **Prepared for** : UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
+- **Semester** - Fall 2023
+- <a href="https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/tree/main"><img align="left" src="https://img.shields.io/badge/-Project GitHub Repo-181717?logo=github&style=flat" alt="icon | GitHub"/></a> 
+- <a href="https://www.linkedin.com/in/manimadhuriedara/"><img align="left" src="https://img.shields.io/badge/-LinkedIn: Lets Connect!-1E90FF?logo=linkedin&style=flat" alt="icon | LinkedIn"/></a>  
+- <a href="https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/blob/main/Edara_Manimadhuri_DATA660-AMZ_Customer_Review_Analysis.pptx"><img src="https://img.shields.io/badge/-PowerPoint Presentation Download-B7472A?logo=microsoftpowerpoint&style=flat" alt="icon | GitHub"/></a>  
+-  <a href=""><img align="left" src="https://img.shields.io/badge/-YouTube Presentation-FF0000?logo=youtube&style=flat" alt="icon | YouTube"/></a> 
   
 ## Objective
 
