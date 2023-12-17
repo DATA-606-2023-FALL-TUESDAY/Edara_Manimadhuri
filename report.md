@@ -162,7 +162,7 @@ Overall, the analysis of the plot provides valuable insights into the customer e
  
 ## Model Training
 
-CNN model model = Sequential() is a sequential convolutional neural network. Sequential models are a type of neural network that are built by stacking layers of neurons in a linear sequence.
+**1) CNN model model** : Sequential() is a sequential convolutional neural network. Sequential models are a type of neural network that are built by stacking layers of neurons in a linear sequence.
 
 - The plot shows that the CNN model has a high training accuracy and a high validation accuracy. This suggests that the model is able to learn to classify the Amazon Grocery reviews accurately.
 
@@ -189,14 +189,56 @@ Here are some additional insights that can be drawn from the metrics:
 - The model has a high overall performance, with an accuracy of 88% and an F1-score of 87%. This suggests that the model is able to classify Amazon Grocery reviews accurately and reliably.
 
 
+**2) BERT Model** : The plot shows the topic word scores of Amazon Grocery Review Data using the Transformer BERT model. The x-axis shows the topic, and the y-axis shows the score for each word in that topic.
+
+![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/blob/main/Bert_model.png)
+
+Topics are categorized into the following groups:
+
+- Fresh produce: chips, popcorn, oatmeal, decaf, kernels, oats, potato, coffee, cheddar, Quaker, chip
+- Dairy products: decaffeinated, popped, instant, tortilla, decafs, kernel, steel, bag, coffees
+- Beverages: again, ginger, cappuccino, sugar, price, lemon, illy, molasses, product, kili, issimo
+- Processed foods and snacks: brown, flavor, beverage, espresso, sweetener, taste, ale, coffee, diabetic
+- Other: price, customer service, freshness, taste, variety, convenience, value for money, packaging, delivery
   
+**Insights:**
+
+- The most common topics discussed in Amazon Grocery reviews are fresh produce, dairy products, beverages, and processed foods and snacks. This suggests that these are the categories of products that customers are most interested in and that they are most likely to leave reviews for.
+- The topic modeling of Amazon Grocery Review Data using the Transformer BERT model has identified several sub-topics within each of the main categories. For example, the fresh produce topic includes sub-topics such as chips, popcorn, and oatmeal.
+- The topic modeling has also identified some unexpected relationships between different topics. For example, the coffee topic is related to the decaffeinated and instant coffee topics, but it is also related to the breakfast cereal topic. This suggests that customers are often purchasing coffee and breakfast cereal together.
+
+Overall, the plot provides valuable insights into the topics that customers are discussing in Amazon Grocery reviews. This information can be used to improve the customer experience and to increase sales.
+
 ## Application of the Trained Models
 
-TBA
+**Key Findings Related to the Research Questions**
+
+**Review Behaviour**
+- The distribution of the number of reviews shows that the majority of reviewers (80%) leave one or two reviews, while a small percentage of reviewers (20%) leave more than two reviews. This suggests that there is a small group of frequent reviewers.
+- The distribution of the standard deviation of ratings shows that the majority of reviewers (75%) leave ratings that have a standard deviation of less than 1.0, while a small percentage of reviewers (25%) leave ratings that have a standard deviation of greater than 1.0. This suggests that there is a small group of reviewers who tend to leave extreme ratings.
+- The cross-correlation of the number of reviews and the standard deviation of ratings shows that there is a positive correlation between the two variables. This suggests that frequent reviewers are more likely to leave extreme ratings than infrequent reviewers.
+
+**Sentiment Analysis**
+- Amazon Grocery has a high average sentiment score. This suggests that customers are overall satisfied with the products, services, and prices offered by Amazon Grocery.
+- The distribution of sentiment scores is skewed to the right. This suggests that there are more positive reviews than negative reviews.
+- The most common sentiment scores are 5.0 and 4.0 (positive). 
+- The least common sentiment scores are 1.0 and 2.0 (negative).
+
+**Key Factors Influencing Customer Satisfaction**
+
+- Dominant Topics: Topics labeled 6.0(Shopping Experience), 12.0 (Customer Experience), and 2.0(Positive Feedback) seem to be the most dominant, as they have the highest proportions in the dataset.
+
+- Influence on Customer Satisfaction: Topics 7.0(Taste Preferences), 13.0(Coffee and Tea), and 3.0 (Snack Preferences) seem to have a more significant impact on customer satisfaction, given their higher influence values on satisfaction.
 
 ## Conclusion
 
-TBA
+The comprehensive analysis conducted using the LDA model and the Transformer BERT model on Amazon Grocery Review Data has provided valuable insights into the prevalent topics and their relationships. The identification of primary categories like fresh produce, dairy products, beverages, and processed foods and snacks, along with their respective subtopics, offers a nuanced understanding of customer interests.
+
+The discerned relationships between topics, such as the association between fresh produce and dairy products or the co-occurrence of coffee and breakfast cereal, shed light on purchasing patterns and customer preferences. These findings are crucial for Amazon Grocery to enhance its customer experience, optimize product placement, and develop targeted marketing strategies.
+
+The recommendations derived from this analysis, including strategic product bundling and placement, reflect actionable insights for Amazon Grocery to consider for product enhancement and sales uplift. Emphasizing product quality, competitive pricing, freshness, taste, variety, convenience, and efficient delivery will further contribute to meeting customer expectations.
+
+Ultimately, the culmination of these insights serves as a guide for Amazon Grocery to optimize its offerings, improve customer satisfaction, and foster sustained growth in a competitive market landscape.
 
 ## References
  [1] Sentiment Analysis on Amazon Product Reviews using Text Analysis and Natural Language Processing Methods, April 2023, 
