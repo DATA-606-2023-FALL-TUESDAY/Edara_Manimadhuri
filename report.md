@@ -95,7 +95,10 @@ The graph indicates a right-skewed distribution of ratings, suggesting a greater
 - Defined a function preprocess_text to tokenize the text and remove stopwords. Which tokenizes the text, converts it to lowercase, and filters out non-alphabetic words and stopwords. The processed_documents list is created by applying the preprocess_text function to each document in the 'reviewText' column of the DataFrame.
 - Defined another function, returning_tokinize_list, to tokenize all the words in the 'reviewText' column and combine them into a single list named tokenize_list_words for further analysis.
 
-#### Topic modeling using Latent Dirichlet Allocation (LDA):
+#### Topic modeling 
+
+**1) Latent Dirichlet Allocation (LDA):**
+
 - Created a dictionary using the Gensim library. It associates words with unique integer IDs.
 - Generated a corpus by converting each document into a bag of words. Each document is represented as a list of (word ID, word frequency) pairs based on the dictionary created earlier. This prepares the data for the LDA model.
 - Performed LDA topic modeling using Gensim's LdaModel. It specifies the number of topics (in this case, 5) and uses the corpus and dictionary created earlier as input data. 
@@ -159,10 +162,29 @@ These insights can help in understanding the prevalent themes and discussions wi
 
 Overall, the analysis of the plot provides valuable insights into the customer experience on Amazon Grocery. This information can be used to improve the product selection, quality, and pricing in order to better meet the needs of customers.
 
- 
+ **2) BERT Model** : The plot shows the topic word scores of Amazon Grocery Review Data using the Transformer BERT model. The x-axis shows the topic, and the y-axis shows the score for each word in that topic.
+
+![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/blob/main/Bert_model.png)
+
+Topics are categorized into the following groups:
+
+- Fresh produce: chips, popcorn, oatmeal, decaf, kernels, oats, potato, coffee, cheddar, Quaker, chip
+- Dairy products: decaffeinated, popped, instant, tortilla, decafs, kernel, steel, bag, coffees
+- Beverages: again, ginger, cappuccino, sugar, price, lemon, illy, molasses, product, kili, issimo
+- Processed foods and snacks: brown, flavor, beverage, espresso, sweetener, taste, ale, coffee, diabetic
+- Other: price, customer service, freshness, taste, variety, convenience, value for money, packaging, delivery
+  
+**Insights:**
+
+- The most common topics discussed in Amazon Grocery reviews are fresh produce, dairy products, beverages, and processed foods and snacks. This suggests that these are the categories of products that customers are most interested in and that they are most likely to leave reviews for.
+- The topic modeling of Amazon Grocery Review Data using the Transformer BERT model has identified several sub-topics within each of the main categories. For example, the fresh produce topic includes sub-topics such as chips, popcorn, and oatmeal.
+- The topic modeling has also identified some unexpected relationships between different topics. For example, the coffee topic is related to the decaffeinated and instant coffee topics, but it is also related to the breakfast cereal topic. This suggests that customers are often purchasing coffee and breakfast cereal together.
+
+Overall, the plot provides valuable insights into the topics that customers are discussing in Amazon Grocery reviews. This information can be used to improve the customer experience and to increase sales.
+
 ## Model Training
 
-**1) CNN model model** : Sequential() is a sequential convolutional neural network. Sequential models are a type of neural network that are built by stacking layers of neurons in a linear sequence.
+**CNN model model** : Sequential() is a sequential convolutional neural network. Sequential models are a type of neural network that are built by stacking layers of neurons in a linear sequence.
 
 - The plot shows that the CNN model has a high training accuracy and a high validation accuracy. This suggests that the model is able to learn to classify the Amazon Grocery reviews accurately.
 
@@ -187,28 +209,7 @@ Here are some additional insights that can be drawn from the metrics:
 - The model is better at identifying negative reviews than positive reviews.
 - The model is confusing some positive reviews with negative reviews. This could be due to a number of factors, such as the complexity of the task, the quality of the training data, or the hyperparameters of the model.
 - The model has a high overall performance, with an accuracy of 88% and an F1-score of 87%. This suggests that the model is able to classify Amazon Grocery reviews accurately and reliably.
-
-
-**2) BERT Model** : The plot shows the topic word scores of Amazon Grocery Review Data using the Transformer BERT model. The x-axis shows the topic, and the y-axis shows the score for each word in that topic.
-
-![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/blob/main/Bert_model.png)
-
-Topics are categorized into the following groups:
-
-- Fresh produce: chips, popcorn, oatmeal, decaf, kernels, oats, potato, coffee, cheddar, Quaker, chip
-- Dairy products: decaffeinated, popped, instant, tortilla, decafs, kernel, steel, bag, coffees
-- Beverages: again, ginger, cappuccino, sugar, price, lemon, illy, molasses, product, kili, issimo
-- Processed foods and snacks: brown, flavor, beverage, espresso, sweetener, taste, ale, coffee, diabetic
-- Other: price, customer service, freshness, taste, variety, convenience, value for money, packaging, delivery
-  
-**Insights:**
-
-- The most common topics discussed in Amazon Grocery reviews are fresh produce, dairy products, beverages, and processed foods and snacks. This suggests that these are the categories of products that customers are most interested in and that they are most likely to leave reviews for.
-- The topic modeling of Amazon Grocery Review Data using the Transformer BERT model has identified several sub-topics within each of the main categories. For example, the fresh produce topic includes sub-topics such as chips, popcorn, and oatmeal.
-- The topic modeling has also identified some unexpected relationships between different topics. For example, the coffee topic is related to the decaffeinated and instant coffee topics, but it is also related to the breakfast cereal topic. This suggests that customers are often purchasing coffee and breakfast cereal together.
-
-Overall, the plot provides valuable insights into the topics that customers are discussing in Amazon Grocery reviews. This information can be used to improve the customer experience and to increase sales.
-
+- 
 ## Application of the Trained Models
 
 **Key Findings Related to the Research Questions**
