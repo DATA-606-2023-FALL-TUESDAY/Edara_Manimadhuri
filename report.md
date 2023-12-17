@@ -7,7 +7,7 @@
 - <a href="https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/tree/main"><img align="left" src="https://img.shields.io/badge/-Project GitHub Repo-181717?logo=github&style=flat" alt="icon | GitHub"/></a> 
 - <a href="https://www.linkedin.com/in/manimadhuriedara/"><img align="left" src="https://img.shields.io/badge/-LinkedIn: Lets Connect!-1E90FF?logo=linkedin&style=flat" alt="icon | LinkedIn"/></a>  
 - <a href="https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/blob/main/Edara_Manimadhuri_DATA660-AMZ_Customer_Review_Analysis.pptx"><img src="https://img.shields.io/badge/-PowerPoint Presentation Download-B7472A?logo=microsoftpowerpoint&style=flat" alt="icon | GitHub"/></a>  
--  <a href=""><img align="left" src="https://img.shields.io/badge/-YouTube Presentation-FF0000?logo=youtube&style=flat" alt="icon | YouTube"/></a> 
+-  <a href="https://www.youtube.com/watch?v=E5NyBs_dd6w"><img align="left" src="https://img.shields.io/badge/-YouTube Presentation-FF0000?logo=youtube&style=flat" alt="icon | YouTube"/></a> 
   
 ## Objective
 
