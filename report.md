@@ -1,7 +1,7 @@
 # Capstone Report
 ## Textual Analysis of Amazon Grocery and Gourmet Food Product Reviews.
 
--  **Author Name** : Manimadhuri Edara
+- **Author Name** : Manimadhuri Edara
 - **Prepared for** : UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
 - **Semester** - Fall 2023
 - <a href="https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/tree/main"><img align="left" src="https://img.shields.io/badge/-Project GitHub Repo-181717?logo=github&style=flat" alt="icon | GitHub"/></a> 
@@ -28,7 +28,7 @@ The Text Analysis of Amazon Grocery_and_Gourmet_Food Product Reviews will provid
   Text analysis of Amazon grocery product reviews has significance since it can provide businesses, consumers, and the food industry with valuable insights by 
   identifying trends and patterns in Amazon food product reviews.
   
-- Research Questions:
+## Research Questions:
  
   1. **Reviewer Behavior:**
      - Identify patterns in reviewer behavior, such as frequent reviewers or those who tend to leave extreme ratings.
@@ -104,31 +104,92 @@ The graph indicates a right-skewed distribution of ratings, suggesting a greater
 
 To assess the quality of the topics produced by the LDA model, a coherence score is calculated using the 'CoherenceModel'.   The coherence score quantifies the level of clarity and interpretability of the issues. Analyzing the recognized topics and their top words can offer significant insights into the content of the dataset, making it a useful technique for organizing and understanding text data.
 
-#### Sentiment analysis using VADER(Valence Aware Dictionary and sEntiment Reasoner):
+![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/blob/main/Network%20Graph.png)
 
-Conducting sentiment analysis on Amazon review data, explored the temporal evolution of sentiments in reviews. To achieve this, initiated the VADER sentiment analyzer and applied it to the 'reviewText' column in the DataFrame, assigning a sentiment score to each review. Subsequently, visualized the sentiment score distribution using a histogram. Later, converted the 'unixReviewTime' column to a datetime format and organized the data into time periods, in this case, monthly intervals. Calculating the mean sentiment for each period, generated a time series plot to visualize sentiment changes over time. This insightful analysis offers a deeper understanding of how sentiments evolve in Amazon grocery reviews, facilitating data-driven decisions and valuable insights.
+The distribution of the number of reviews shows that the majority of reviewers (80%) leave one or two reviews, while a small percentage of reviewers (20%) leave more than two reviews. This suggests that there is a small group of frequent reviewers.
 
-![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/blob/main/src/senti_distribution.png)
+Overall, the analysis of the plot suggests that there are two patterns in reviewer behavior:
 
-Below graph shows that the average rating of the grocery store has declined over time. In 2001, the average rating was 0.9. In 2013, the average rating was 0.7.
-This decline in average rating could be due to a number of factors, such as a decrease in the quality of the products or services, a spike in the number of negative customer reviews or a change in the demographics of the customers. 
+- There is a small group of frequent reviewers.
+- Frequent reviewers are more likely to leave extreme ratings than infrequent reviewers.
+  
+Additionally, the plot shows that the majority of reviews are positive (4-5 stars), with a small percentage of negative reviews (1-2 stars). This suggests that customers are generally satisfied with Amazon Grocery.
 
-Key insights from the graph:
+Some specific insights that can be drawn from the plot include:
 
-- The decline in average rating is gradual, suggesting that it is not due to a single event or change.
-- The decline in average rating is consistent across all years shown in the graph.
-- The decline in the average rating is not uniform. The average rating declined more sharply between 2001 and 2003 than it did in subsequent years.
+- The top 3 most reviewed grocery items are fresh produce, meat and seafood, and dairy products. This suggests that these items are important to customers and that they are looking for quality products in these categories.
 
-Overall, the image suggests that the grocery store has experienced a decline in customer satisfaction over time. These insights could be used to identify the root cause of the decline in customer satisfaction and develop strategies to address it.
+- The top 3 most positively reviewed grocery items are fresh produce, dairy products, and beverages. This suggests that customers are particularly satisfied with the quality and selection of these items.
 
+- The top 3 most negatively reviewed grocery items are processed foods, snacks, and candy. This suggests that customers may be looking for healthier options in these categories or that they are not satisfied with the quality of the products currently available.
 
-![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/blob/main/src/senti_time.png)
+Amazon Grocery Review Data and consists of 15 topics with associated words and their probabilities within each topic. Here's an interpretation and some insights from this analysis:
+
+**Topic 1 (Nutritional Content)** : This topic seems to focus on nutritional aspects, highlighting words like "calories," "sugar," "fat," "serving," and "protein." Customers discussing the nutritional value of food products might relate to this topic.
+
+**Topic 2 (Positive Feedback)** : Words like "great," "good," "love," "taste," and "recommend" indicate positive sentiments about various products. This topic likely encompasses favorable reviews and positive experiences shared by customers.
+
+**Topic 3 (Snack Preferences)**: It appears to be related to snacks, with terms such as "popcorn," "snack," "butter," "bars," and "flavor." Discussions about snack preferences, flavors, and choices might be covered in this topic.
+
+**Topic 4 (Cooking Ingredients)**: This topic seems to involve ingredients used in cooking, including "sauce," "seasoning," "rice," "pasta," and "garlic." Customers discussing recipes, cooking methods, and ingredients might be part of this topic.
+
+**Topic 5 (Energy Drinks)**: Words like "drink," "energy," "caffeine," and "soda" suggest discussions about energy drinks, their effects, and consumption patterns.
+
+**Topic 6 (Shopping Experience)**: This topic could be related to the shopping experience, covering aspects like "price," "store," "buy," and "brand." Customers discussing where to purchase, prices, and different brands might contribute to this topic.
+
+**Topic 7 (Taste Preferences)**: Terms like "like," "taste," "flavor," and "good" indicate discussions about personal taste preferences and opinions about food items.
+
+**Topic 8 (Sweet Treats)**: This topic seems to revolve around sweet treats, including "chocolate," "cookies," "caramel," and "chips." It likely covers discussions about various types of sweets and their flavors.
+
+**Topic 9 (Cooking Ingredients)**: It focuses on ingredients used in cooking and baking, including "coconut oil," "flour," "butter," and "olive oil."
+
+**Topic 10 (Health Benefits)**: This topic may encompass discussions about health benefits related to certain products, like "honey," "health," "benefits," and "matcha."
+
+**Topic 11 (Organic/Natural Products)**: This topic seems to involve discussions about organic and natural products, including "organic," "natural," "fruit," and "juice."
+
+**Topic 12 (Customer Experience)**: Words like "try," "love," and "tried" suggest personal experiences and opinions shared by customers.
+
+**Topic 13 (Coffee and Tea)**: It covers discussions about coffee and tea, with words like "coffee," "tea," "cup," "flavor," and "roast."
+
+**Topic 14 (Beverages)**: This topic appears to involve discussions about beverages, including "water," "sugar," "milk," and "powder."
+
+**Topic 15 (Packaging)**: This topic relates to packaging, including terms like "bag," "box," "package," and "plastic."
+
+These insights can help in understanding the prevalent themes and discussions within the Amazon Grocery Review Data, aiding in identifying customer preferences, trends, and concerns related to grocery items and food products.
+
+Overall, the analysis of the plot provides valuable insights into the customer experience on Amazon Grocery. This information can be used to improve the product selection, quality, and pricing in order to better meet the needs of customers.
 
  
 ## Model Training
 
-TBA
+CNN model model = Sequential() is a sequential convolutional neural network. Sequential models are a type of neural network that are built by stacking layers of neurons in a linear sequence.
 
+- The plot shows that the CNN model has a high training accuracy and a high validation accuracy. This suggests that the model is able to learn to classify the Amazon Grocery reviews accurately.
+
+- The plot also shows that the training accuracy is slightly higher than the validation accuracy. This suggests that the model is overfitting the training data to some extent. Overfitting is a problem that occurs when a model learns the training data too well and is unable to generalize to new data.
+
+- To reduce overfitting, the model could be trained for fewer epochs or the model could be regularized using techniques such as L1 regularization or L2 regularization.
+
+![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/blob/main/Training%20and%20Validation%20Acuracy.png)
+
+![image](https://github.com/DATA-606-2023-FALL-TUESDAY/Edara_Manimadhuri/blob/main/classification_report.png)
+
+The metrics for the Amazon Grocery Review Data show that the CNN model is performing well. The accuracy of the model is 88%, which means that the model is able to correctly classify 88% of the reviews. The precision and recall for both classes (positive and negative reviews) are also high, which means that the model is able to identify both positive and negative reviews accurately.
+
+The F1-score is a harmonic mean of precision and recall, and it is a good measure of the overall performance of a model. The F1-score for the CNN model is 87%, which indicates that the model is performing well on both precision and recall.
+
+The confusion matrix shows that the model is more likely to confuse positive reviews with negative reviews (2760 false positives) than negative reviews with positive reviews (876 false negatives).
+
+Overall, the metrics suggest that the CNN model is a promising model for classifying Amazon Grocery reviews. The model has a high accuracy, precision, recall, and F1-score.
+
+Here are some additional insights that can be drawn from the metrics:
+
+- The model is better at identifying negative reviews than positive reviews.
+- The model is confusing some positive reviews with negative reviews. This could be due to a number of factors, such as the complexity of the task, the quality of the training data, or the hyperparameters of the model.
+- The model has a high overall performance, with an accuracy of 88% and an F1-score of 87%. This suggests that the model is able to classify Amazon Grocery reviews accurately and reliably.
+
+
+  
 ## Application of the Trained Models
 
 TBA
